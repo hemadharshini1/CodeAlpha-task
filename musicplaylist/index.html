@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container" id="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+    </div>
+
+    <div class="register-container" id="register-container" style="display: none;">
+        <h2>Register</h2>
+        <input type="text" id="new-username" placeholder="Username">
+        <input type="password" id="new-password" placeholder="Password">
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+
+    <div class="player-container" id="player-container" style="display: none;">
+        <div class="player">
+            <img id="lover" class="album-art" src="c:\Users\HEMA\OneDrive\Desktop\Taylor_Swift_-_Lover.png" alt="Album Art">
+            <h2 id="song-title">Song 1</h2>
+            <audio id="audio" src="c:/Users/HEMA/Downloads/Lover - Ladies And Gentlemen.mp3"></audio>
+            <div class="controls">
+                <button onclick="prevSong()">⏮️</button>
+                <button onclick="togglePlayPause()">▶️/⏸️</button>
+                <button onclick="nextSong()">⏭️</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
